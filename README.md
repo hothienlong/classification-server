@@ -22,7 +22,6 @@ Experiment results with SVM model and Tfidf, BoW features
 Create Development Environment 
 
 ``` 
-cd plays/vntc
 conda create -n classification python=3.6
 pip install -r requirements.txt
 ```
