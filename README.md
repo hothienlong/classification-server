@@ -1,24 +1,3 @@
-# Training a Vietnamese Text Classifier
-
-In this play, we build a `Vietnamese Text Classifier` using `VNTC` dataset
-
-## Results
-
-[*Corpus Description*](vntc_description.md)
-
-Experiment results with SVM model and Tfidf, BoW features
-
-| Models                                          | F1 (%)   |
-|-------------------------------------------------|----------|
-| TfidfVectorizer(ngram_range=(1, 2), max_df=0.5) | **92.8** |
-| CountVectorizer(ngram_range=(1, 3), max_df=0.7) | 89.3     |
-| TfidfVectorizer(max_df=0.8)                     | 89.0     |
-| CountVectorizer(ngram_range=(1, 3)              | 88.9     |
-| TfidfVectorizer(ngram_range=(1, 3))             | 86.8     |
-| CountVectorizer(max_df=0.7)                     | 85.5     |
-
-## Reproduce
-
 Create Development Environment 
 
 # mỗi dự án lớn đều thường hard code một phiên bản cố định, để tránh sự bất đồng bộ => tải đúng phiên bản yêu cầu
@@ -60,11 +39,11 @@ Predict using trained model
 ```
 python vntc_predict.py
 
-Text: Huawei có thể không cần Google, nhưng sẽ ra sao nếu thiếu ARM ?
-Labels: ['vi_tinh']
+Text: Một Mình Cân Hết Mâm Tôm Nữ Hoàng Rang Muối Ớt Siêu Cay ngon nhức nách 😆
+Labels: ['thucpham_douong']
 
-Text: Trưởng phòng GD&ĐT xin lỗi vụ học sinh nhận khen thưởng là tờ giấy A4
-Labels: ['chinh_tri_xa_hoi'] 
+Text: Quang Hải đang đá bóng
+Labels: ['thethao'] 
 ```
 
 Optimize hyper-parameters
