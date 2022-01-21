@@ -21,10 +21,22 @@ Experiment results with SVM model and Tfidf, BoW features
 
 Create Development Environment 
 
+# mỗi dự án lớn đều thường hard code một phiên bản cố định, để tránh sự bất đồng bộ => tải đúng phiên bản yêu cầu
+# cài môi trường conda để quản lý package của 1 dự án, các package sẽ đc cài đúng vào môi trường đó (ko tốn thêm bộ nhớ nhờ cơ chế ánh xạ, chỉ cài thêm nếu chưa có package đó, cùng env thì package mới khác phiên bản sẽ ghi đè phiên bản cũ)
+
+# conda quản lý mọi thứ python, có sẵn tất cả phiên bản, ko cần cài thêm
+
+# conda env list: xem các môi trường đã tạo
+
 ``` 
-conda create -n classification python=3.6
-pip install -r requirements.txt
+conda create -n classification python=3.6 (tạo môi trường python)
+conda activate classification (active môi trường đã tạo)
+pip install underthesea
 ```
+# pip install -r requirements.txt
+
+# pip install torch===1.5.1 torchvision===0.6.1 -f https://download.pytorch.org/whl/torch_stable.html
+
 
 Download VNTC dataset
 
