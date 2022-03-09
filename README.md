@@ -12,10 +12,11 @@ conda create -n classification python=3.6 (tạo môi trường python)
 conda activate classification (active môi trường đã tạo)
 pip install underthesea
 ```
-# pip install -r requirements.txt
 
-# pip install torch===1.5.1 torchvision===0.6.1 -f https://download.pytorch.org/whl/torch_stable.html
-
+```
+pip install -r requirements.txt
+pip install torch===1.5.1 torchvision===0.6.1 -f https://download.pytorch.org/whl/torch_stable.html
+```
 
 Download VNTC dataset
 
