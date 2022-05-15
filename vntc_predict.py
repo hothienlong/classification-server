@@ -69,9 +69,14 @@ def get_categories_with_count():
     return {"categories": Counter(categories)}
 
 
+@app.route("/")
+def home_view():
+        return "<h1>Welcome to Classification server</h1>"
+
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=1000, debug=True)
+    app.run()
+    # app.run(host='127.0.0.1', port=1000, debug=True)
 
 # predict('Quay qua quay lại đến cuối tuần, thời gian trôi qua quá nhanh. Cuối tuần này các bạn làm gì? 😌Còn minh tranh thủ thời gian chơi cùng các con và đưa vợ đi làm, trên đường 2 vợ chồng nghe lại bài Nắm Lấy Tay Anh. Còn các bạn hôm nay có đang nghe bài nào của Hưng không? Chúc mọi người cuối tuần vui nhé! 😍')
 # predict('Anh được công chúng biết đến qua vai trò là thành viên của nhóm nhạc Quả dưa hấu - nhóm nhạc nổi tiếng của Hà Nội vào những năm cuối thế kỉ 20 và qua vai trò')
